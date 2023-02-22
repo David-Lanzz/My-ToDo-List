@@ -9,6 +9,11 @@ window.addEventListener('click', (e) => {
   if (e.target.id === 'edit') {
     targeted.nextElementSibling.toggleAttribute('readonly');
     targeted.nextElementSibling.classList.toggle('edited');
+    for (let i = 0; i < List.items.length; i += 1) {
+      if (targeted.nextElementSibling.id === List.items[i].index.toString()) {
+        List.items[i].description = targeted.nextElementSibling.value;
+      }
+    } localStorage.setItem('inputarray', JSON.stringify(List.items));
   } else if (e.target.id === 'addbtn') {
     addlists();
   } else if (e.target.id === 'clear') {
