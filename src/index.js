@@ -1,22 +1,40 @@
 import './style.css';
+import { addlists, List } from './modules/functionality.js';
 
-const listcontainer = document.querySelector('#listcontainer');
-const items = [
-  {
-    description: 'Wash the dishes',
-    completed: false,
-    index: 1,
-  }, {
-    description: 'Complete todo list project',
-    completed: false,
-    index: 1,
-  },
-];
-const addlists = () => {
-  let output = '';
-  for (let i = 0; i < items.length; i += 1) {
-    output += `<li class="listitem" id="${items.index}"><input type="checkbox" class="check" id="check"><input type="text" value="${items[i].description}" class="input"><i class="fa-solid fa-ellipsis-vertical"></i></li>`;
+const outputarray = JSON.parse(localStorage.getItem('inputarray'));
+
+window.addEventListener('click', (e) => {
+  if (e.target.id === 'edit') {
+    e.target.parentNode.firstElementChild.nextElementSibling.toggleAttribute('readonly');
+    e.target.parentNode.firstElementChild.nextElementSibling.classList.toggle('edited');
+  } else if (e.target.id === 'addbtn') {
+    addlists();
+  } else if (e.target.id === 'check') {
+    e.target.parentNode.firstElementChild.nextElementSibling.classList.toggle('checked');
+    for (let i = 0; i < List.items.length; i += 1) {
+      if (e.target.parentNode.firstElementChild.nextElementSibling.id
+         === List.items[i].index.toString() && List.items[i].completed === false) {
+        List.items[i].completed = true;
+      } else if (e.target.parentNode.firstElementChild.nextElementSibling.id
+        === List.items[i].index.toString() && List.items[i].completed === true) {
+        List.items[i].completed = false;
+      }
+    }
+  } else if (e.target.id === 'clear') {
+    const filteredarray = List.items.filter((elements) => elements.completed === false);
+    List.items = filteredarray;
+    List.loop();
+  } else if (e.target.id === 'refresh') {
+    if (outputarray) {
+      List.items = outputarray;
+      List.loop();
+    }
   }
-  listcontainer.innerHTML = output;
-};
-addlists();
+});
+
+window.addEventListener('load', () => {
+  if (outputarray) {
+    List.items = outputarray;
+    List.loop();
+  }
+});

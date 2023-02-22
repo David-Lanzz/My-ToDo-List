@@ -37,6 +37,8 @@ li {
   padding-left: 2.5rem;
   width: 100%;
   border: none;
+  transition: 0.5s;
+  font-size: 0.9rem;
 }
 
 .borderline {
@@ -84,4 +86,12 @@ button {
 
 i:hover {
   color: #333;
+}
+
+.edited {
+  color: rgb(104, 104, 177);
+}
+
+.checked {
+  text-decoration: line-through;
 }
