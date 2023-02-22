@@ -1,4 +1,5 @@
 export const listcontainer = document.querySelector('#listcontainer');
+const descript = document.querySelector('#description');
 export class List {
   constructor(description, index, completed) {
     this.description = description;
@@ -23,11 +24,11 @@ export class List {
       localStorage.setItem('inputarray', JSON.stringify(List.items));
     }
 }
-const descript = document.querySelector('#description');
 
 export const addlists = () => {
   if (descript.value) {
     const newItem = new List(descript.value);
+    descript.value = '';
     newItem.completed = false;
     List.items.push(newItem);
     List.loop();
