@@ -69,7 +69,7 @@
 
 >
 
-- [Live Demo Link](https://david-lanzz.github.io/My-Todo-List/)
+- [Live Demo Link](https://david-lanzz.github.io/My-ToDo-List/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +89,7 @@ A good internet connection
 Clone this repository to your desired folder:
 
 - cd my-project
-  - git clone https://github.com/David-Lanzz/My-Todo-List.git
+  - git clone https://github.com/David-Lanzz/My-ToDo-List.git
 ### Install
 
 Install this project with:
