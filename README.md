@@ -69,7 +69,7 @@
 
 >
 
-- [Live Demo Link](https://david-lanzz.github.io/My-ToDo-List/)
+- [Live Demo Link](  https://david-lanzz.github.io/My-ToDo-List/dist/ )
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
