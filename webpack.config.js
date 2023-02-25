@@ -29,6 +29,7 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
         /* eslint-disable */
+include: path.resolve(__dirname,'src'),
       },
       /* eslint-disable */
     ],
