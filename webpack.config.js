@@ -18,8 +18,9 @@ module.exports = {
     }),
   ],
   output: {
-    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '',
+    filename: 'main.js',
   },
 
   module: {
@@ -27,8 +28,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+        /* eslint-disable */
 include: path.resolve(__dirname,'src'),
       },
+      /* eslint-disable */
     ],
   },
 };
