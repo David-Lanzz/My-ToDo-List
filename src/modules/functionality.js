@@ -1,7 +1,6 @@
 export const listcontainer = document.querySelector('#listcontainer');
 const descript = document.querySelector('#description');
 
-// class for object creations and methods
 export class List {
   constructor(description, index, completed) {
     this.description = description;
