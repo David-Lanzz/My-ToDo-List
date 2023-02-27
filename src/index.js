@@ -9,6 +9,7 @@ window.addEventListener('click', (e) => {
   if (e.target.id === 'edit') {
     targeted.nextElementSibling.toggleAttribute('readonly');
     targeted.nextElementSibling.classList.toggle('edited');
+    e.target.parentNode.lastElementChild.classList.toggle('visibletrash');
     for (let i = 0; i < List.items.length; i += 1) {
       if (targeted.nextElementSibling.id === List.items[i].index.toString()) {
         List.items[i].description = targeted.nextElementSibling.value;
@@ -17,13 +18,17 @@ window.addEventListener('click', (e) => {
   } else if (e.target.id === 'addbtn') {
     addlists();
   } else if (e.target.id === 'clear') {
-    const filteredarray = List.items.filter((elements) => elements.completed === false);
-    List.items = filteredarray;
-    List.loop();
+    List.filter();
   } else if (e.target.id === 'refresh') {
     if (outputarray) {
       window.location.reload();
     }
+  } else if (e.target.id === 'trash') {
+    for (let i = 0; i < List.items.length; i += 1) {
+      if (targeted.nextElementSibling.id === List.items[i].index.toString()) {
+        List.items[i].completed = true;
+      }
+    } List.filter();
   }
 });
 window.addEventListener('change', (e) => {
