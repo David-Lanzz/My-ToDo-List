@@ -88,6 +88,14 @@ i:hover {
   color: #333;
 }
 
+.trash {
+  margin-left: 0.5rem;
+}
+
+.visibletrash {
+  display: none;
+}
+
 .edited {
   color: rgb(104, 104, 177);
 }
