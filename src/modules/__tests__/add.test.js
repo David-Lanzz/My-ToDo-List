@@ -11,7 +11,7 @@ const List = require('../add.js');
 
 Enzyme.configure({ adapter: new Adapter() });
 
-const dom = new JSDOM('<section id=\'section\'><p>Hello i am lanzz</p></section>');
+const dom = new JSDOM('<section id="section"><p>Hello i am lanzz</p></section>');
 const { document } = dom.window;
 const container = document.querySelector('#section');
 
