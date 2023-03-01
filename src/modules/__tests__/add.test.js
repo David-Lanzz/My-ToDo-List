@@ -42,7 +42,7 @@ describe('Final test to test if items get added and removed to and from the dom'
     const listitems = document.querySelectorAll('#section li');
     expect(listitems).toHaveLength(2);
   });
-  test('if one item is added to lists', () => {
+  test('add exactly one <li> element to the list in the DOM', () => {
     button.simulate('click');
     expect(List.items).toHaveLength(3);
   });
