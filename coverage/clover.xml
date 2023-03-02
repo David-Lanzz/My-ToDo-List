@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1677775719542" clover="3.2.0">
-  <project timestamp="1677775719542" name="All files">
+<coverage generated="1677776928561" clover="3.2.0">
+  <project timestamp="1677776928562" name="All files">
     <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="19" coveredelements="19" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
     <file name="methods.js" path="C:\Users\LANZZ\my microverse programming files\My-ToDo-List-1\src\modules\methods.js">
       <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
