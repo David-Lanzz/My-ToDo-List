@@ -30,7 +30,7 @@ const funct = jest.fn(() => {
 const button = shallow((<button onClick={funct}>Ok!</button>));
 
 describe('Final test=s for status updates and general delete methods', () => {
-  describe('Final test to test if items get added and removed to and from the dom', () => {
+  describe('items should be added and removed from the dom', () => {
     test('if loop is read and hard coded list objects get added to the dom', () => {
       container.innerHTML = List.loop();
       const listitems = document.querySelectorAll('#section li');
