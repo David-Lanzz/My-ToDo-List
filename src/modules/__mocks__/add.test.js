@@ -63,7 +63,7 @@ describe('Final test=s for status updates and general delete methods', () => {
       expect(List.items).toHaveLength(2);
     });
   });
-  describe('do something', () => {
+  describe('Final tests to check for status updates,local storage and dom manipulation', () => {
     test('expect task description to change', () => {
       const edited = document.querySelector('#edit');
       const targeted = edited.parentNode.firstElementChild;
