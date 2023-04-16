@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
 
+<img src="./src/logo/myLogo.png" alt="logo">
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -23,12 +24,16 @@
 - [📝 License](#license)
 
 
-# 📖 [MY-PORTFOLIO] <a name="about-project"></a>
+npx stylelint "**/*.{css,scss}"
+
+# 📖 [MY-TODO-LIST] <a name="about-project"></a>
 
 > 
-**MY-TODO-LIST** is a project i worked to help clients all around the world set goals according to priority.
+**MY-TODO-LIST** is a project i worked to help clients all around the world set goals/tasks according to priority.
 
-## 🛠 Built With <a name="built-with">Visual Studio Code and Github</a>
+## 🛠 Built With
+ > Visual Studio Code,
+ > Github
 
 ### Tech Stack <a name="tech-stack">Frontend Technology</a>
 
@@ -48,9 +53,9 @@
   </ul>
 </details>
 <details>
-  <summary>Mark-Up Language</summary>
+  <summary>JavaScript</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://cdnjs.com/">JavaScript</a></li>
   </ul>
 </details>
 
@@ -75,14 +80,15 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> All necessary files about the concert are present in the repo so run/install it and check through for any information you might need
+> All necessary files about the concert are present in the repo so run/install it and check through for any information you might need.
+
 ### Prerequisites
 
 
 In order to run this project you need:
 A browser
 A good internet connection
-
+Visual Studio Code [OPTIONAL]
 
 ### Setup
 
@@ -90,6 +96,7 @@ Clone this repository to your desired folder:
 
 - cd my-project
   - git clone https://github.com/David-Lanzz/My-ToDo-List.git
+
 ### Install
 
 Install this project with:
@@ -100,7 +107,11 @@ Install this project with:
 ### Usage
 
 
-To run the project, Click on the live Demo link
+To run the project, Click on the live Demo link or...
+- git clone  https://github.com/David-Lanzz/My-ToDo-List.git
+- cd My-ToDo-List
+- npm install
+- npm start
 
 ### Run tests
 
@@ -131,10 +142,10 @@ githack and github pages
 👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/David-Lanzz)
-- Twitter: [@twitterhandle](@LanzzDavid)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/lanzz-david-378b9a250)
+- Twitter: [@twitterhandle](https://twitter.com/LanzzDavid)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/david-lanzz/)
 
-👤
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
