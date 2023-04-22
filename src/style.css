@@ -52,6 +52,10 @@ li {
   font-style: italic;
 }
 
+.startdrag {
+  opacity: 30%;
+}
+
 .listitem {
   display: flex;
   align-items: center;
