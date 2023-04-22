@@ -2,6 +2,8 @@ import './style.css';
 import { addlists, List } from './modules/functionality.js';
 import defaultExport from './modules/status.js';
 
+const sortablelist = document.querySelector('.sortable-list');
+
 const outputarray = JSON.parse(localStorage.getItem('inputarray'));
 
 window.addEventListener('click', (e) => {
@@ -42,4 +44,25 @@ window.addEventListener('load', () => {
     List.items = outputarray;
     List.loop();
   }
+});
+
+window.addEventListener('dragstart', (e) => {
+  const item = e.target;
+  if (item.classList.contains('listitem')) {
+    item.classList.add('startdrag');
+  }
+});
+window.addEventListener('dragend', (e) => {
+  const item = e.target;
+  if (item.classList.contains('listitem')) {
+    item.classList.remove('startdrag');
+  }
+});
+sortablelist.addEventListener('dragover', (e) => {
+  e.preventDefault();
+  const dragging = sortablelist.querySelector('.startdrag');
+  const siblings = [...sortablelist.querySelectorAll('.listitem:not(.startdrag)')];
+  const nextsib = siblings
+    .find((sibling) => e.clientY <= sibling.offsetTop + sibling.offsetHeight / 2);
+  sortablelist.insertBefore(dragging, nextsib);
 });

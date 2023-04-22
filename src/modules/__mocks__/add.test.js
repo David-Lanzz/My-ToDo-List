@@ -1,5 +1,5 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable consistent-return */
+/*eslint-disable */
+
 import Enzyme, { shallow } from 'enzyme';
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16';
