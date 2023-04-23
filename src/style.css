@@ -6,14 +6,24 @@
   padding: 0;
 }
 
+body,
+.borderline,
+.listitem {
+  display: flex;
+  align-items: center;
+}
+
+body,
+.input,
+button {
+  width: 100%;
+}
+
 body {
   background-color: grey;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100vh;
-  width: 100%;
 }
 
 body,
@@ -24,7 +34,6 @@ button {
 
 main {
   width: 80%;
-
   background-color: #fff;
 }
 
@@ -32,11 +41,14 @@ li {
   list-style: none;
 }
 
+.input,
+button {
+  border: none;
+}
+
 .input {
   height: 100%;
   padding-left: 2.5rem;
-  width: 100%;
-  border: none;
   transition: 0.5s;
   font-size: 0.9rem;
 }
@@ -44,8 +56,6 @@ li {
 .borderline {
   border-bottom: solid #c4c2c2 1px;
   height: 4rem;
-  display: flex;
-  align-items: center;
 }
 
 .italic {
@@ -57,8 +67,6 @@ li {
 }
 
 .listitem {
-  display: flex;
-  align-items: center;
   height: 4rem;
   border-bottom: solid #c4c2c2 1px;
 }
@@ -75,9 +83,7 @@ i {
 }
 
 button {
-  width: 100%;
   height: 4rem;
-  border: none;
   background-color: rgb(206, 204, 204);
   color: #727171;
   font-size: 1rem;
