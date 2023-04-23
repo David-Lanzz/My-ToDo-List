@@ -22,6 +22,7 @@ export class List {
     let output = '';
     for (let i = 0; i < List.items.length; i += 1) {
       List.items[i].index = i + 1;
+      List.items[i].completed = false;
       output += `<li id="item" draggable="true" class="listitem" id="${List.items[i].index}">
        <input type="checkbox" class="check" id="check">
        <input id="${List.items[i].index}" type="text" value="${List.items[i].description}" class="input" readonly>
