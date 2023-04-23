@@ -24,7 +24,7 @@
 - [📝 License](#license)
 
 
-npx stylelint "**/*.{css,scss}"
+
 
 # 📖 [MY-TODO-LIST] <a name="about-project"></a>
 
